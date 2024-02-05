@@ -1,2 +1,2 @@
-# Ulriceham_Tandl-karcenter
+# Ulriceham_Tandläkarcenter
 Ulricehamn tandläkarcenter´s hemsida

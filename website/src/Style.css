@@ -1,0 +1,72 @@
+:root {
+  --primary-color: #dbecf4;
+  --secondary-color: #cadeed;
+  --third-color: #b7d0e1;
+  --fourth-color: #91AEC4;
+  --fifth-color: #5f84a2;
+  --sixth-color: #194569;
+  --off-color: #5e341b;
+}
+
+/**
+  * Header
+  * Header Id´s start with "Header" followed by a "-" to destiguish from header and not.
+*/
+
+#Header-Container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2; /* Higher than the video to ensure it's on top */
+  
+}
+
+#Header-Inner-Container {
+  padding: 1rem;
+  display: flex;
+  box-shadow: 0 30px 30px var(--primary-color);
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, var(--third-color), var(--primary-color));
+  position: relative;
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+
+#Header-Pages-Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10rem;
+  width: 20rem;
+}
+
+#Header-Home,
+#Header-About,
+#Header-Contact {
+  display: flex;
+  flex-direction: column;
+  height: 4rem;
+}
+
+#Header-Home-Link,
+#Header-About-Link,
+#Header-Contact-Link {
+  text-decoration: none;
+  color: var(--sixth-color);
+  font-size: 24px;
+}
+
+
+
+/*
+  * Home
+  * Home Id´s start with "Home" followed by a "-" to destiguish from home and not.
+*/
+
+#Video-Container {
+  position: relative; /* Adjust based on your layout */
+  z-index: 1; /* Ensure this is lower than the header's z-index */
+  top: -50px; /* Overlaps the header bottom; adjust as needed */
+}

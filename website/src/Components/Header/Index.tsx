@@ -4,7 +4,7 @@ import {AboutUsPage} from "../../Pages/About-us/Index"
 import {ContactPage}  from "../../Pages/Contact/Index"
 import {HomePage}  from "../../Pages/Home/Index"
 import "../../Style.css"
-import { HomeIcon,AboutIcon } from "../IconHandler/Index"
+import { HomeIcon,AboutIcon, ContactIcon } from "../IconHandler/Index"
 
 export const Header = () => {
     return (
@@ -12,20 +12,28 @@ export const Header = () => {
             <Router>
                 <div id="Header-Inner-Container">
                     <div id="Header-Icon"> THIS IS MADE FOR ICON</div>
-                <div id="Header-Pages-Container">
-                <div id="Header-Home">
-                    <Link id="Header-Home-Link" to="/"><HomeIcon style={{height: "20px", fill: "#194569"}}/><br/>Hem </Link>
-                </div>
-                <div id="Header-About">
-                    <Link id="Header-About-Link" to="/about-us">Om oss <br/></Link>
-                </div>
-                <div id="Header-Contact">
-                    <Link id="Header-Contact-Link" to="/contact"><AboutIcon style={{ height: "20px", fill: "#194569"}}/><br/>Kontakt</Link>
-                </div>
+                    <div id="Header-Pages-Container">
+                        
+                            <Link id="Header-Home-Link" to="/">
+                                <HomeIcon style={{height: "20px", fill: "#194569"}}/>
+                                Hem
+                            </Link>
+                       
+                            <Link id="Header-About-Link" to="/about-us">
+                                <AboutIcon style={{height: "20px", fill: "#194569"}}/>
+                                
+                                Om oss
+                            </Link>
+                       
+                            <Link id="Header-Contact-Link" to="/contact">
+                                <ContactIcon style={{ height: "20px", fill: "#194569"}}/>
+                                Kontakt
+                            </Link>
+                        
+
+                    </div>
 
                 </div>
-
-            </div>
 
 
                 <Routes>

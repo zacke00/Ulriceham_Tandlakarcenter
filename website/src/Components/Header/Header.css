@@ -1,0 +1,56 @@
+:root {
+    --primary-color: #dbecf4;
+    --secondary-color: #cadeed;
+    --third-color: #b7d0e1;
+    --fourth-color: #91AEC4;
+    --fifth-color: #5f84a2;
+    --sixth-color: #194569;
+    --off-color: #e5d7c9;
+    --off-color1: #40E0D0;
+}
+
+/**
+  * Header
+  * Header Id´s start with "Header" followed by a "-" to destiguish from header and not.
+*/
+
+#Header-Container {
+    position: relative; /* Stick to the top of the viewport */
+    top: 0;
+    z-index: 20; /* Ensure it is layered above other content */
+    background-color: white; /* Background color for the header */
+}
+  
+#Header-Inner-Container {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 33%;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+  
+  
+#Header-Pages-Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 10rem;
+    width: 20rem;
+}
+  
+#Header-Home-Link,
+#Header-About-Link,
+#Header-Contact-Link {
+    text-decoration: none;
+    color: var(--sixth-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 14;
+}
+  
+  

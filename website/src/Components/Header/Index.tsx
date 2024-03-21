@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom"
 import {AboutUsPage} from "../../Pages/About-us/Index"
 import {ContactPage}  from "../../Pages/Contact/Index"
 import {HomePage}  from "../../Pages/Home/Index"
+
 import "./Header.css"
-import { HomeIcon,AboutIcon, ContactIcon } from "../IconHandler/Index"
 
 export const Header: React.FC = () => {
 
@@ -19,7 +19,7 @@ export const Header: React.FC = () => {
 
                                 Hem
                             </Link>
-                       
+
                             <Link id="Header-About-Link" to="/about-us">
 
                                 
@@ -30,6 +30,7 @@ export const Header: React.FC = () => {
 
                                 Kontakt
                             </Link>
+
                         
 
                     </div>
@@ -40,6 +41,7 @@ export const Header: React.FC = () => {
                 <Routes>
                     <Route path="/" element={<HomePage/>} />
                     <Route path="/about-us" element={<AboutUsPage/>} />
+
                     <Route path="/contact" element={<ContactPage/>} />
                 </Routes>
             </Router>

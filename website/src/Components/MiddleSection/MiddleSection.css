@@ -2,11 +2,11 @@
   display: flex;
   position: relative;
   align-items: center;
-  padding-top: 5rem;
+  
   justify-content: center;
   gap: 2rem;
   z-index: 1;
-  background: linear-gradient(to bottom, var(--fifth-color), transparent, var(--fifth-color) );
+
 }
 
 #Home-First-Item,

@@ -5,7 +5,7 @@ import "./Mainbody.css"
 export const MainBody = () => {
     return (
 
-      <div id="Home-Inner-Container" style={{ position: 'relative', height: '50vh', overflow: 'hidden', paddingTop: 100}}>
+      <div id="Home-Inner-Container" style={{ position: 'relative', height: '70vh', overflow: 'hidden', paddingTop: 100}}>
       <video 
       style={{
         position: 'absolute',
@@ -28,7 +28,7 @@ export const MainBody = () => {
     </video>
         <div id="Home-Title">
           <h1>Home</h1>
-          
+          <MiddleSection/>
         </div>
     </div>
     )

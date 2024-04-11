@@ -4,14 +4,19 @@
   * Home Id´s start with "Home" followed by a "-" to destiguish from home and not.
 */
 
-#Home-Inner-Container{
+#Main-Inner-Container{
     background: linear-gradient(to bottom, transparent, transparent, transparent, black);
     z-index: -2;
 
 }
-#Home-Title {
+#Main-Title {
   font-size: 48px;
-  color: var(--sixth-color);
+  color: white;
+  font-family: "Comfortaa", cursive;
+  color: rgb(60, 60, 60);
+  text-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+  opacity: 1;
+  text-decoration: solid;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -24,4 +29,6 @@
   z-index: -1;
   padding-top: 7rem;
 }
+
+
 

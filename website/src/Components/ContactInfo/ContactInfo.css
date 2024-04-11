@@ -1,4 +1,4 @@
-#CI_Main_Container{
+#CI-Main-Container{
     display: flex;
     position: relative;
     align-items: center;
@@ -12,7 +12,7 @@
     background-color: rgb(255, 255, 255);
 }
 
-#CI_Inner_Container {
+#CI-Inner-Container {
     margin: 1rem;
     width: 18rem;
     height: 28rem;
@@ -23,7 +23,8 @@
     border-radius: 0.3rem;
 }
 
-#CI_Secound_Container,
-#CI_Third_Container{
+#CI-Secound-Container,
+#CI-Third-Container{
+    
 }
 

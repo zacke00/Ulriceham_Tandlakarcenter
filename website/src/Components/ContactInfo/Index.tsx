@@ -6,15 +6,15 @@ const ContactInfo: React.FC = () => {
 
 
     return (
-        <div id="CI_Main_Container">
-            <div id="CI_Inner_Container">
-                <div id="CI_Secound_Container">
+        <div id="CI-Main-Container">
+            <div id="CI-Inner-Container">
+                <div id="CI-Secound-Container">
                     <p>text</p>
                 </div>
-                <div id="CI_Third_Container">
+                <div id="CI-Third-Container">
                     <p>text</p>
                 </div>
-                <div id="CI_Fourth_Container">
+                <div id="CI-Fourth-Container">
                     <p>text</p>
                 </div>
             </div>

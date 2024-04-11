@@ -1,33 +1,35 @@
-#Home-Section-Container {
+#MS-Section-Container {
   display: flex;
   position: relative;
   align-items: center;
-  
   justify-content: center;
   gap: 2rem;
   z-index: 1;
 
 }
 
-#Home-First-Item,
-#Home-Second-Item{
+#MS-First-Item,
+#MS-Second-Item{
   padding: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 45%;
-  background-color: rgb(154, 195, 229);
+  background-color: rgb(132, 197, 250);
   transition: all 0.5s ease-in-out;
   box-shadow: 0 0 50px var(--sixth-color);
   z-index: 1;
 }
 
-#Home-First-Item{
+#MS-First-Item{
   border-radius: 10px 0 10px 0px;
 }
-#Home-Second-Item{
+#MS-Second-Item{
   border-radius: 0 10px 0px 10px;
 }
   
-#Home-First-Item:hover,
-#Home-Second-Item:hover {
+#MS-First-Item:hover,
+#MS-Second-Item:hover {
   background-color: rgb(174, 218, 253);
   transform: scale(1.06);
   opacity: 1;

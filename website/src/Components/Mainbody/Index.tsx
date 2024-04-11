@@ -5,7 +5,7 @@ import "./Mainbody.css"
 export const MainBody = () => {
     return (
 
-      <div id="Home-Inner-Container" style={{ position: 'relative', height: '70vh', overflow: 'hidden', paddingTop: 100}}>
+      <div id="Main-Inner-Container" style={{ position: 'relative', height: '70vh', overflow: 'hidden', paddingTop: 100}}>
       <video 
       style={{
         position: 'absolute',
@@ -26,10 +26,11 @@ export const MainBody = () => {
     <source src="/Videos/Dental-Care.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
-        <div id="Home-Title">
-          <h1>Home</h1>
-          <MiddleSection/>
+        <div id="Main-Title">
+          <h1>Tandanlaget</h1>
         </div>
+
+          <MiddleSection/>
     </div>
     )
 }

@@ -12,7 +12,7 @@ export const Header: React.FC = () => {
         <div id="Header-Container" >
             <Router>
                 <div id="Header-Inner-Container">
-                    <div id="Header-Icon"> THIS IS MADE FOR ICON</div>
+                    <div id="Header-Icon"> Tandanlaget</div>
                     <div id="Header-Pages-Container">
                         
                             <Link id="Header-Home-Link" to="/">

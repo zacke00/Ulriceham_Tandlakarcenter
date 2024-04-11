@@ -3,6 +3,7 @@ import React from "react";
 import MiddleSection from "../../Components/MiddleSection/Index";
 import ContactInfo from "../../Components/ContactInfo/Index";
 import "./Contact.css"
+
 export const ContactPage = () => {
 
     const mapContainerStyle = {
@@ -31,7 +32,6 @@ export const ContactPage = () => {
                         zoom={15}
                         
                         >
-                            
                         <Marker position={markerPosition} />
                     </GoogleMap>
                 </LoadScript>

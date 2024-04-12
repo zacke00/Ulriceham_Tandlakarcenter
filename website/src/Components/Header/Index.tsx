@@ -22,7 +22,6 @@ export const Header: React.FC = () => {
 
                             <Link id="Header-About-Link" to="/about-us">
 
-                                
                                 Om oss
                             </Link>
                        

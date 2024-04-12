@@ -1,7 +1,5 @@
 #CI-Main-Container{
     display: flex;
-    position: relative;
-    align-items: center;
 
     z-index: 2;
     flex-direction: column;
@@ -13,18 +11,21 @@
 }
 
 #CI-Inner-Container {
-    margin: 1rem;
+    margin-left: 1rem;
     width: 18rem;
-    height: 28rem;
     display: flex;
     flex-direction: column;
-
-    align-items: center;
     border-radius: 0.3rem;
 }
 
 #CI-Secound-Container,
-#CI-Third-Container{
-    
+#CI-Third-Container,
+#CI-Fourth-Container{
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
 }
 
+#CI-Title{
+    font-family: "Comfortaa", cursive;
+}

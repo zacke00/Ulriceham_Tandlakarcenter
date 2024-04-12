@@ -6,19 +6,27 @@
   gap: 2rem;
   z-index: 1;
 
+
 }
 
 #MS-First-Item,
 #MS-Second-Item{
+  text-decoration: none;
   padding: 0.4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 45%;
   background-color: rgb(132, 197, 250);
   transition: all 0.5s ease-in-out;
   box-shadow: 0 0 50px var(--sixth-color);
+  color: rgb(60, 60, 60);
   z-index: 1;
+}
+
+#MS-Div-Text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
 }
 
 #MS-First-Item{
@@ -34,4 +42,9 @@
   transform: scale(1.06);
   opacity: 1;
   z-index: 1;
+}
+
+#Text-P {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
 }

@@ -9,14 +9,17 @@ const ContactInfo: React.FC = () => {
         <div id="CI-Main-Container">
             <div id="CI-Inner-Container">
                 <div id="CI-Secound-Container">
-                    <p>text</p>
+                    <h1 id="CI-Title">Tandanlaget</h1>
                 </div>
                 <div id="CI-Third-Container">
-                    <p>text</p>
+                    <h2>Telefon</h2>
+                    <p>070-123 45 67</p>
                 </div>
                 <div id="CI-Fourth-Container">
-                    <p>text</p>
+                    <h2>Email</h2>
+                    <p>Test@Test.se</p>
                 </div>
+
             </div>
         </div>
     );

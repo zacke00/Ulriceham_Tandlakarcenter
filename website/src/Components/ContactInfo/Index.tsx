@@ -1,8 +1,8 @@
 import React from "react";
-import "./ContactInfo.css"
+import "./ContactInfo.css";
+import FaceImage from "../../Images/Tandanlaget-face.png"
+
 const ContactInfo: React.FC = () => {
-
-
 
 
     return (
@@ -11,15 +11,22 @@ const ContactInfo: React.FC = () => {
                 <div id="CI-Secound-Container">
                     <h1 id="CI-Title">Tandanlaget</h1>
                 </div>
+                <div id="CI-Image-Container">
+                    <div id="CI-Image"></div>
+                </div>
                 <div id="CI-Third-Container">
-                    <h2>Telefon</h2>
-                    <p>070-123 45 67</p>
+                    <h2 id="CI-Sub-Title">Telefon</h2>
+                    <p id="CI-Sub-P">070-123 45 67</p>
                 </div>
                 <div id="CI-Fourth-Container">
-                    <h2>Email</h2>
-                    <p>Test@Test.se</p>
+                    <h2 id="CI-Sub-Title">Email</h2>
+                    <p id="CI-Sub-P">Test@Test.se</p>
                 </div>
-
+                <div id="CI-Fifth-Container">
+                    <h2 id="CI-Sub-Title">Adress</h2>
+                    <p id="CI-Sub-P">Jönköpingsvägen 37</p>
+                    <p id="CI-Sub-P">523 36 Ulricehamn</p>
+                </div>
             </div>
         </div>
     );

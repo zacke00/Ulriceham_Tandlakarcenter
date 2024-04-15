@@ -1,6 +1,5 @@
 #CI-Main-Container{
     display: flex;
-
     z-index: 2;
     flex-direction: column;
     box-shadow: 0 0 30px var(--sixth-color);
@@ -16,6 +15,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 0.3rem;
+
 }
 
 #CI-Secound-Container,
@@ -24,8 +24,43 @@
     display: flex;
     flex-direction: column;
     width: 18rem;
+    padding: 0;
+    margin: 0;
+
 }
 
 #CI-Title{
+    color: var(--Main-Title-Color);
     font-family: "Comfortaa", cursive;
+}
+
+#CI-Sub-Title{
+    color: var(--sixth-color);
+    font-family: "Comfortaa", cursive;
+    font-size: 10;
+    margin: 0;
+    margin-top: 1rem;
+}
+#CI-Sub-P {
+    color: var(--sixth-color);
+    font-family: "Comfortaa", cursive;
+    font-size: 10;
+    margin: 0;
+}
+
+#CI-Image-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+#CI-Image {
+    background-image: url("../../Images/Tandanlaget-face.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
 }

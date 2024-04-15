@@ -45,7 +45,6 @@
   
 #Header-Home-Link,
 #Header-About-Link,
-#Header-Kids-Link,
 #Header-Contact-Link {
     text-decoration: none;
     color: var(--sixth-color);
@@ -53,10 +52,22 @@
     align-items: center;
     flex-direction: column;
     font-size: 14;
+    font-family: "Comfortaa", cursive;
+    transition: all 0.5s ease-in-out;
 }
-  
+
+#Header-Home-Link:hover,
+#Header-About-Link:hover,
+#Header-Contact-Link:hover {
+    transform: scale(1.2);
+    color: red;
+}
+
+
+
 #Header-Icon {
     font-family: "Comfortaa", cursive;
     font-size: 24px;
-    color: red;
+    color: var(--Main-Title-Color);
+    
 }

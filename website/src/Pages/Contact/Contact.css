@@ -1,14 +1,14 @@
 
-#CP_Main_Container{
+#CP-Main-Container{
     display: flex;
     position: relative;
     justify-content: right;
     z-index: -1;
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
 
 }
-#CP_Map_Container{
+#CP-Map-Container{
     position: fixed;
     z-index: 0;
     height: 80vh;
@@ -17,7 +17,7 @@
 
 }
 
-#Inside_Map_Info{
+#Inside-Map-Info{
 
     position: relative;
     justify-self: right;

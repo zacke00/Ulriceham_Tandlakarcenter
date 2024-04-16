@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './Carousel.css'; // Import your CSS file for styling
+import { type } from 'os';
+
+
 
 const Carousel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

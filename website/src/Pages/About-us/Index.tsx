@@ -1,9 +1,11 @@
 import React from "react";
 
+import Carousel from "../../Components/Carousel/Index";
+
 export const AboutUsPage = () => {
     return (
         <div>
-            <h1>About Us</h1>
+        <Carousel/>
         </div>
     )
 }

@@ -1,0 +1,77 @@
+
+#Carousel-Main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, transparent,rgba(55,55,55,0.8), rgb(55,55,55),rgba(55,55,55,0.8), transparent);
+}
+
+#Carousel-Inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    gap: 1rem;
+}
+
+#Carousel-Item{
+    text-decoration: none;
+    height: 10rem;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.875);
+    color: rgb(60, 60, 60);
+    z-index: -1;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    opacity: 0.5;
+    transition: 1s;
+    
+}
+
+#Carousel-Prev{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+
+}
+
+#Carousel-Next{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    border-radius: 50%;
+    
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+#Carousel-Item-Active{
+    box-shadow: 0 0 50px white;
+    transform: scale(1.6);
+    opacity: 1;
+    background-color: blue;
+    height: 10rem;
+    width: 100%;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+    left: 50%;
+    right: 50%;
+}

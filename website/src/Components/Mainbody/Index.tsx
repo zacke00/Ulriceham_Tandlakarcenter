@@ -15,7 +15,7 @@ export const MainBody = () => {
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)', // Centers the video
-        zIndex: '-1', // Ensure the video stays in the background
+        zIndex: '-2', // Ensure the video stays in the background
         opacity: '0.5'
       }}
       autoPlay

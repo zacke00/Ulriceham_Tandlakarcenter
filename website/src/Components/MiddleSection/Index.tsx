@@ -30,9 +30,8 @@ const MiddleSection: React.FC  = () => {
               style={{ opacity: hoveredItem && hoveredItem !== 'second' ? 0.6 : 0.9 }}
             >
               
-              <h3 id="MS-Sub-Title">om oss</h3>
-              <p id="MS-Sub-P"> Välkommen till Tandanlaget i Ulricehamn. <br/>
-Oavsett om du har värk i en tand, pressar tänder eller vill ha hjälp att skydda dina tänder under hela livet, finns vi här för dig. 
+              <h3 id="MS-Sub-Title">Om oss</h3>
+              <p id="MS-Sub-P"> Välkommen till Tandanlaget i Ulricehamn. Oavsett om du har värk i en tand, pressar tänder eller vill ha hjälp att skydda dina tänder under hela livet, finns vi här för dig. 
  </p>
 
             </div>

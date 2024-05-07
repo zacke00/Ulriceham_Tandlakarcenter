@@ -6,6 +6,7 @@
     height: 100vh;
     width: 100vw;
     background: linear-gradient(to bottom, transparent,rgba(55,55,55,0.8), rgb(55,55,55),rgba(55,55,55,0.8), transparent);
+    z-index: 0;
 }
 
 #Carousel-Inner{
@@ -27,7 +28,7 @@
     transition: all 0.5s ease-in-out;
     box-shadow: 0 0 50px rgba(255, 255, 255, 0.875);
     color: rgb(60, 60, 60);
-    z-index: -1;
+    z-index: -2;
     transform: translateX(-50%);
     transform: translateY(-50%);
     opacity: 0.5;
@@ -45,10 +46,11 @@
     height: 20rem;
     width: 100%;
     border: none;
-    z-index: 4;
+    z-index:-1;
     transition: all 0.5s ease-in-out;
     left: 50%;
     right: 50%;
+    
     display: flex;
     justify-content: center;
     align-items: center;

@@ -6,8 +6,6 @@ export const AboutUsPage = () => {
     
     
     return (
-        <div>
             <Carousel/>
-        </div>
     )
 }

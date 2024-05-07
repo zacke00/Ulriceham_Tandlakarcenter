@@ -10,7 +10,6 @@ export const Header: React.FC = () => {
 
     return (
         <div id="Header-Container" >
-            <Router>
                 <div id="Header-Inner-Container">
                     <div id="Header-Icon"> Tandanlaget</div>
                     <div id="Header-Pages-Container">
@@ -36,14 +35,6 @@ export const Header: React.FC = () => {
 
                 </div>
 
-
-                <Routes>
-                    <Route path="/" element={<HomePage/>} />
-                    <Route path="/about-us" element={<AboutUsPage/>} />
-
-                    <Route path="/contact" element={<ContactPage/>} />
-                </Routes>
-            </Router>
         </div>
 
     )

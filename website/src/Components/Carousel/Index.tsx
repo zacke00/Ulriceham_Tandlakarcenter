@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Carousel.css'; // Import your CSS file for styling
 import { type } from 'os';
+import { Hannes, Nargis, Sted } from '../Personal/Index';
 
 
 
@@ -28,9 +29,15 @@ const Carousel: React.FC = () => {
         <div id="Carousel-Inner" style={{ transform: `translateX(calc(0% + ${currentIndex * 33.33}%))` }}>
 
         
-            <div id={currentIndex === 1 ? "Carousel-Item-Active" : "Carousel-Item"} onClick={() => handleClick(1)}>Item 1</div>
-            <div id={currentIndex === 0 ? "Carousel-Item-Active" : "Carousel-Item"} onClick={() => handleClick(0)}>Item 2</div>
-            <div id={currentIndex === -1 ? "Carousel-Item-Active" : "Carousel-Item"} onClick={() => handleClick(-1)}>Item 3</div>
+            <div id={currentIndex === 1 ? "Carousel-Item-Active" : "Carousel-Item"} onClick={() => handleClick(1)}>
+              <Nargis/>
+            </div>
+            <div id={currentIndex === 0 ? "Carousel-Item-Active" : "Carousel-Item"} onClick={() => handleClick(0)}>
+              <Sted/>
+            </div>
+            <div id={currentIndex === -1 ? "Carousel-Item-Active" : "Carousel-Item"} onClick={() => handleClick(-1)}>
+              <Hannes/>
+            </div>
         </div>
         <div id="Carousel-Next">
             <button id="next-btn" onClick={prevSlide}>›</button>

@@ -9,7 +9,7 @@ export const HomePage = () => {
 
     return (
 
-      <div style={{opacity: 0.999, zIndex: -3}}>  {/* This is a hack to fix the video not showing up */}
+      <div style={{opacity: 0.999, zIndex: -3}}>  {/* This is a hack to fix the mainBody items not working correctly */}
 
       <MainBody/>
       <h2>Information</h2>

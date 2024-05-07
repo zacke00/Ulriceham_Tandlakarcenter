@@ -27,7 +27,7 @@ export const MainBody = () => {
       Your browser does not support the video tag.
     </video>
         <div id="Main-Title">
-          <h1>Tandanlaget</h1>
+
         </div>
 
           <MiddleSection/>

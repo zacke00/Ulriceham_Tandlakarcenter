@@ -1,0 +1,38 @@
+.Profile-Picture-Hannes,
+.Profile-Picture-Sted
+{
+    height: 40vh;
+    width: 40vw;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.Profile-Picture-Sted
+{
+    height: 40vh;
+    width: 40vw;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+    background-image: url("../../Images/Tandanlaget-face.png");
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.Profile-Picture-Called{
+
+    height: 20vh;
+    width: 20vw;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.Hannes {
+
+}
+
+.Sted {
+    background-image: url("../../Images/Tandanlaget-face.png");
+    background-size: cover;
+}

@@ -1,19 +1,19 @@
 
 import { useState } from 'react';
 import { Header } from './Components/Header/Index';
-import { ThemeContext, ThemeContextType }  from "./Context/ThemeContext/ThemeContext";
-import  { DentistProvider }  from "./Context/NameContext/NameContext"
+import { ThemeContextType }  from "./Context/ThemeContext/ThemeContext";
 import { Footer } from './Components/Footer/Index';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ContactPage } from './Pages/Contact/Index';
 import { AboutUsPage } from './Pages/About-us/Index';
 import { HomePage } from './Pages/Home/Index';
+
 function App() {
   const [theme, setTheme] = useState<ThemeContextType>("light");
 
   return (
-    <ThemeContext.Provider value={theme}>
-      <DentistProvider>
+      <div id='body'>
+
         <Router>
         <Header/>
           <Routes>
@@ -24,8 +24,7 @@ function App() {
 
         </Router>
         <Footer/>
-      </DentistProvider>
-    </ThemeContext.Provider>
+      </div>
       
   );
 }

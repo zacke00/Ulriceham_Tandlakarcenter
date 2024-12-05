@@ -4,7 +4,7 @@
     align-items: center;
     position: relative;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background: linear-gradient(to bottom, transparent,rgba(55,55,55,0.8), rgb(55,55,55),rgba(55,55,55,0.8), transparent);
     z-index: 0;
 }
@@ -21,16 +21,14 @@
 
 #Carousel-Item{
     text-decoration: none;
-    height: 10rem;
-    width: 100%;
+
     background-position: center;
     background-size: cover;
     transition: all 0.5s ease-in-out;
     box-shadow: 0 0 50px rgba(255, 255, 255, 0.875);
     color: rgb(60, 60, 60);
     z-index: -2;
-    transform: translateX(-50%);
-    transform: translateY(-50%);
+
     opacity: 0.5;
     transition: 1s;
     display: flex;
@@ -39,28 +37,16 @@
     border-radius: 10px;
 }
 #Carousel-Item-Active{
-    box-shadow: 0 0 20px white;
-    transform: scale(1.6);
-    background-color: var(--fifth-color);
-    border-radius: 10px;
-    height: 20rem;
-    width: 100%;
-    border: none;
-    z-index:-1;
-    transition: all 0.5s ease-in-out;
-    left: 50%;
-    right: 50%;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
 #Carousel-Prev{
     position: absolute;
     top: 50%;
+    padding: 1rem;
     left: 10%;
     transform: translateY(-50%);
+    transform: scale(2);
     font-size: 2rem;
     color: white;
     border-radius: 50%;
@@ -73,10 +59,13 @@
     position: absolute;
     top: 50%;
     right: 10%;
+    padding: 1rem;
     transform: translateY(-50%);
+    transform: scale(2);
     font-size: 2rem;
-    border: none;
+    color: white;
     border-radius: 50%;
     cursor: pointer;
-    z-index: 1;
+    z-index: 2;
+    
 }

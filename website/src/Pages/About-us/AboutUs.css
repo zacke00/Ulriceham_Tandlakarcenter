@@ -1,0 +1,10 @@
+
+#AU-Main-Container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    z-index: 0;
+    height: 80vh;
+    width: 100%;
+    padding: 0;
+}

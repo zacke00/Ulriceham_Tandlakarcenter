@@ -6,6 +6,9 @@ export const AboutUsPage = () => {
     
     
     return (
+        <div id="AU-Main-Container">
+
             <Carousel/>
+        </div>
     )
 }

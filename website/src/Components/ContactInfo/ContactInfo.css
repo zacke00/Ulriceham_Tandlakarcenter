@@ -4,8 +4,8 @@
     flex-direction: column;
     box-shadow: 0 0 30px var(--sixth-color);
     border-radius: 0.3rem;
-    width: 20rem;
-    height: 30rem;
+    width: 25vw;
+    height: 65vh;
     background-color: rgb(255, 255, 255);
 }
 

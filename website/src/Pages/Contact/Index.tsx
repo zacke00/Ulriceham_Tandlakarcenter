@@ -1,6 +1,5 @@
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import React, { useEffect, useState } from "react";
-import MiddleSection from "../../Components/MiddleSection/Index";
 import ContactInfo from "../../Components/ContactInfo/Index";
 import "./Contact.css"
 
@@ -38,7 +37,7 @@ export const ContactPage = () => {
 
             <div id="CP-Map-Container">
                 <LoadScript 
-                googleMapsApiKey="AIzaSyA6RMA3QdhYD9YNNAkhjQ22Dby59xuOnio" 
+                googleMapsApiKey="AIzaSyACHPdUGavmQ_arXnfoHuqqQoeLALeyQ6o" 
                 onLoad={handleMapLoad}
                 >
                     <GoogleMap

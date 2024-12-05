@@ -37,7 +37,7 @@ export const ContactPage = () => {
 
             <div id="CP-Map-Container">
                 <LoadScript 
-                googleMapsApiKey="AIzaSyACHPdUGavmQ_arXnfoHuqqQoeLALeyQ6o" 
+                googleMapsApiKey="" 
                 onLoad={handleMapLoad}
                 >
                     <GoogleMap

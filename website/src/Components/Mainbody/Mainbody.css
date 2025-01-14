@@ -3,37 +3,43 @@
   * Home
   * Home Id´s start with "Home" followed by a "-" to destiguish from home and not.
 */
-
-#Main-Inner-Container{
-    z-index: 1;
-    display: flex;
-    border-radius: 0 0 3rem 3rem;
-    position: relative;
-    height: 80vh;
-    width: 100%;
-    overflow: hidden;
-}
-#MS-Div-Text {
-  opacity: 0.9;
-  transition: opacity 0.3s ease-in-out;
-}
-#background-video {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -2;
-}
-#MS-Div-Text:hover {
-  opacity: 0.6;
+#Main-Inner-Container {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  align-items: center; /* Vertically centers the content */
+  width: 100vw; /* Full width of the viewport */
+  height: 70vh; /* Full height of the viewport */
+  z-index: -2; /* Ensures it stays below other content */
+  background-color: var(--off-color1);
 }
 
-#background-fallback {
-  background: url('../../Images/Dental-Care-Fallback.jpg')no-repeat;
-  background-size: cover;
-  background-position-y: center;
-  position: absolute;
-  width: 100%;
+#Left-Image {
+  background-size: contain;
+  background-position: center;
+  width: 50%; /* Set specific size for the image */
   height: 100%;
-  z-index: -2;
+  z-index: -1; /* Make sure it stays visible */
+}
+
+#Background-Fallback {
+  background: url(../../../public/Videos/Doctor_Tooth.gif) no-repeat;
+  background-color: var(--off-color1);
+  background-size: 60%;
+  background-position-y: 0%;
+  background-repeat: no-repeat;
+  flex: 1; /* Fills remaining space */
+  height: 100%;
+  width: 50%;
+
+}
+
+#Middle-Section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the MiddleSection */
+  z-index: 2; /* Ensures it is above other content */
+  text-align: center; /* Center the text inside the MiddleSection */
+  width: 100%; /* Optional: Can adjust width to fit content */
 }

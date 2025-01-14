@@ -1,5 +1,5 @@
 import React, { SVGProps, useEffect, useState } from "react"
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom"
+import {Link, useLocation} from "react-router-dom"
 import {AboutUsPage} from "../../Pages/About-us/Index"
 import {ContactPage}  from "../../Pages/Contact/Index"
 import {HomePage}  from "../../Pages/Home/Index"
@@ -7,36 +7,47 @@ import {HomePage}  from "../../Pages/Home/Index"
 import "./Header.css"
 
 export const Header: React.FC = () => {
+    const [scrolled, setScrolled] = useState(false);
+    const location = useLocation();
 
-    return (
-        <div id="Header-Container" >
-                <div id="Header-Inner-Container">
-                    <div id="Header-Icon"> Tandanlaget</div>
-                    <div id="Header-Pages-Container">
-                        
-                            <Link id="Header-Home-Link" to="/">
+   useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 90) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
 
-                                Hem
-                            </Link>
+    window.addEventListener("scroll", handleScroll);
 
-                            <Link id="Header-About-Link" to="/about-us">
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
-                                Om oss
-                            </Link>
-                       
-                            <Link id="Header-Contact-Link" to="/contact">
+  const isMainPage = location.pathname == "/";
 
-                                Kontakt
-                            </Link>
-
-                        
-
-                    </div>
-
-                </div>
-
+  return (
+    <div
+        className={`${
+          scrolled ? "Header-Container-Scrolled" : "Header-Container"
+        } ${isMainPage ? "Main-Page-Header" : "Other-Page-Header"}`}
+      >
+      <div id="Header-Inner-Container">
+        <div id="Header-Icon">Tandanlaget</div>
+        <div id="Header-Pages-Container">
+          <Link to="/" className={scrolled ? "Scrolled-Link" : "Normal-Link"}>
+            <h2>Hem</h2>
+          </Link>
+          <Link to="/about-us" className={scrolled ? "Scrolled-Link" : "Normal-Link"}>
+            <h2>Om oss</h2>
+          </Link>
+          <Link to="/contact" className={scrolled ? "Scrolled-Link" : "Normal-Link"}>
+            <h2>Kontakt</h2>
+          </Link>
         </div>
-
-    )
-}
-
+      </div>
+    </div>
+  );
+};

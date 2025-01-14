@@ -1,25 +1,25 @@
 #MS-Section-Container {
   display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
   position: relative;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 3%;
   z-index: 1;
-
+  padding: 1rem; /* Add padding for better spacing on smaller screens */
 }
 
 #MS-First-Item,
-#MS-Second-Item{
+#MS-Second-Item {
   text-decoration: none;
-  margin-top: 24rem;
-  padding: 0.4rem;
-  height: 11rem;
-  width: 45%;
-  background-color: #d2dbe2;
+  margin-bottom: 1rem; /* Add margin for spacing when items stack */
+  padding: 2%;
+  height: 10rem; /* Allow the height to adjust based on content */
+  width: 40%; /* Default: 45% width for medium to large screens */
+  background-color: var(--primary-color);
   transition: all 0.5s ease-in-out;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
   z-index: 1;
-  transition: 1s;
 }
 
 #MS-First-Item:hover,
@@ -28,7 +28,6 @@
   transform: scale(1.06);
   opacity: 1;
   z-index: 1;
-
 }
 
 #MS-Div-Text {
@@ -40,34 +39,71 @@
   margin-right: 1rem;
 }
 
-#MS-First-Item{
+#MS-First-Item {
   border-radius: 0px 30px 0px 30px;
 }
-#MS-Second-Item{
+#MS-Second-Item {
   border-radius: 30px 0px 30px 0px;
 }
 
-#MS-Second-Item h3 {
-  text-align: end;
-}
-
-#MS-Sub-Title{
+#MS-Sub-Title {
   font-family: "Comfortaa", cursive;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2rem; /* Use relative units for responsiveness */
   margin: 0;
-  margin-top: 1.2rem;
-  border-bottom: 1px dashed #a0b1c1;
+  border-bottom: 1px dashed var(--fourth-color);
   width: 85%;
-  color: #2d526e;
+  color: var(--sixth-color);
+  text-align: center;
 }
 
 #MS-Sub-P {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 1rem; /* Use relative units for scaling */
   width: 85%;
   padding-bottom: 1rem;
-  color: #374a59;
+  color: var(--sixth-color);
   font-weight: 500;
+  text-align: center; /* Ensure text stays centered on all screens */
 }
 
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 768px (tablets and small devices) */
+@media (max-width: 768px) {
+  #MS-First-Item,
+  #MS-Second-Item {
+    width: 90%; /* Items take up more space on smaller screens */
+    height: 8rem;
+    margin-bottom: 0.5rem; /* Add extra spacing */
+  }
+
+  #MS-Sub-Title {
+    font-size: 1.8rem; /* Slightly reduce font size */
+  }
+
+  #MS-Sub-P {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+}
+
+/* For screens smaller than 480px (mobile devices) */
+@media (max-width: 480px) {
+  #MS-Section-Container {
+    gap: 5%; /* Reduce the gap between items */
+  }
+
+  #MS-First-Item,
+  #MS-Second-Item {
+    width: 100%; /* Items span the full width */
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  #MS-Sub-Title {
+    font-size: 1.5rem; /* Reduce font size further */
+  }
+
+  #MS-Sub-P {
+    font-size: 0.8rem; /* Further adjust font size */
+  }
+}

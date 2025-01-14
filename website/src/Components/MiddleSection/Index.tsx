@@ -20,13 +20,10 @@ Vi håller vår bokning tillgänglig både via telefon och mejl.
             <Link to="/about-us" id="MS-Second-Item" >
 
             <div id="MS-Div-Text">
-              
               <h3 id="MS-Sub-Title">Om oss</h3>
               <p id="MS-Sub-P"> Välkommen till Tandanlaget i Ulricehamn! Oavsett om du har tandvärk, pressar tänder eller vill ha hjälp att skydda dina tänder genom hela livet, finns vi här för dig.</p>
-
             </div>
             </Link>
-
         
       </div>
     )

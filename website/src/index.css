@@ -9,6 +9,7 @@
   --off-color1: #C8F5EE;
   --Main-Title-Color: rgb(241, 59, 59);
   --Background-Color: #dbecf4;
+  --White-Color: #eeeded;
 }
 
 
@@ -20,6 +21,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--Background-Color);
+  width: 100vw;
+
 }
 
 code {

@@ -9,7 +9,7 @@
 }
 
 .Other-Page-Header{
-    background-color: var(--off-color);
+    background-color: var(--White-Color);
 }
 
 /* Scrolled Header Style */
@@ -17,7 +17,7 @@
     position: sticky; /* Stick to the top of the viewport */
     top: 0;
     z-index: 1;
-    background-color: white; /* Background color for the header */
+    background-color: var(--primary-color); /* Background color for the header */
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.5s ease-in-out;
     text-decoration: none;

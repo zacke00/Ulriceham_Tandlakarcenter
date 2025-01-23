@@ -4,7 +4,6 @@
     align-items: flex-start;
     flex-direction: column;
     width: 100%;
-    padding: 2rem;
     background-color: var(--off-color); /* Light background for better readability */
 }
 
@@ -37,4 +36,25 @@
     line-height: 1.8; /* Increased line height for easier reading */
     color: var(--sixth-color);
 
+}
+@Media (max-width: 480px){
+
+
+#Information-Main-Container {
+    flex-direction: column;
+
+  }
+
+  #Information-Section {
+    max-width: 90%; /* Slightly reduce max-width */
+    text-align: left; /* Align text for better readability */
+  }
+
+  .Information-Content-Block h2 {
+    font-size: 2rem; /* Reduce heading size */
+  }
+
+  .Information-Content-Block p {
+    font-size: 1rem; /* Adjust paragraph size */
+  }
 }

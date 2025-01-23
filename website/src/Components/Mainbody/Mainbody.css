@@ -1,37 +1,35 @@
-
 /*
-  * Home
-  * Home Id´s start with "Home" followed by a "-" to destiguish from home and not.
-*/
-#Main-Inner-Container {
+ * Home
+ * Home Id´s start with "Home" followed by a "-" to distinguish from home and not.
+ */
+ #Main-Inner-Container {
   display: flex;
   justify-content: flex-start;
   position: relative;
   align-items: center; /* Vertically centers the content */
-  width: 100vw; /* Full width of the viewport */
-  height: 70vh; /* Full height of the viewport */
+  width: 100vw; /* Fixed width in pixels */
+  height: 800px; /* Fixed height in pixels */
   z-index: -2; /* Ensures it stays below other content */
   background-color: var(--off-color1);
+  margin: 0 auto; /* Centers container horizontally */
 }
 
 #Left-Image {
   background-size: contain;
-  background-position: center;
-  width: 50%; /* Set specific size for the image */
-  height: 100%;
+  width: 50%; /* 50% of 1440px */
+  height: 100%; /* Matches parent container */
   z-index: -1; /* Make sure it stays visible */
 }
 
 #Background-Fallback {
   background: url(../../../public/Videos/Doctor_Tooth.gif) no-repeat;
   background-color: var(--off-color1);
-  background-size: 60%;
+
   background-position-y: 0%;
   background-repeat: no-repeat;
   flex: 1; /* Fills remaining space */
+  width: 100%; /* 50% of 1440px */
   height: 100%;
-  width: 50%;
-
 }
 
 #Middle-Section {
@@ -42,4 +40,44 @@
   z-index: 2; /* Ensures it is above other content */
   text-align: center; /* Center the text inside the MiddleSection */
   width: 100%; /* Optional: Can adjust width to fit content */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1100px) {
+  #Main-Inner-Container {
+    width: 100vw; /* Adjusts to viewport width */
+    height: 70vh; /* Adjusts height proportionally */
+  }
+
+  #Left-Image,
+  #Background-Fallback {
+    width: 50%; /* Fallback to percentage for flexibility */
+    height: 100%; /* Keep full height */
+  }
+}
+
+@media (max-width: 768px) {
+  #Main-Inner-Container {
+    flex-direction: column; /* Stacks elements vertically */
+    height: auto; /* Allows content to adjust dynamically */
+  }
+
+  #Left-Image,
+  #Background-Fallback {
+    width: 100%; /* Takes full width */
+    height: 50vh; /* Adjust height for smaller screens */
+  }
+
+  #Middle-Section {
+    top: 40%; /* Adjust position */
+    left: 50%;
+    transform: translate(-50%, -40%);
+  }
+}
+
+@media (max-width: 480px) {
+  #Middle-Section {
+    top: 35%; /* Adjust further for very small screens */
+    font-size: 14px; /* Reduce font size */
+  }
 }

@@ -54,7 +54,7 @@
     align-items: center;
     justify-content: center;
     gap: 33%;
-    padding: 20px;
+    padding-top: 10px;
     z-index: 1;
 }
 
@@ -70,8 +70,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding-right: 10rem;
-    width: 20rem;
+    gap: 20px;
 }
 
 .Normal-Link:hover {
@@ -79,4 +78,26 @@
 }
 .Scrolled-Link:hover {
     transform: scale(1.1);
+}
+
+@Media (max-width:480px){
+
+  #Header-Inner-Container {
+    gap: 15%; /* Reduce gap between header links */
+    padding-top: 5px;
+  }
+
+  #Header-Icon {
+    font-size: 24px; /* Smaller logo size */
+  }
+
+  #Header-Pages-Container {
+    gap: 10px; /* Narrow gap for links */
+  }
+
+  .Normal-Link h2,
+  .Scrolled-Link h2 {
+    font-size: 16px; /* Smaller font for links */
+  }
+
 }

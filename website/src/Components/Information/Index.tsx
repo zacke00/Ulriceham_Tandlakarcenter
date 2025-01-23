@@ -7,9 +7,7 @@ export const Information: React.FC = () => {
     return (
         <div id='Information-Main-Container'>
             <div id='Information-Section'>
-
-
-                {/* Right Side: Scrolling Content */}
+                
                 <div id='Information-Content-Section'>
                     {informationData.info.map((item, index) => (
                         <div key={index} className="Information-Content-Block">

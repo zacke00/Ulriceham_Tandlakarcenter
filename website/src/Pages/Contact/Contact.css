@@ -24,3 +24,13 @@
     right: 8rem;
     height: 1rem;
 }
+
+@media (max-width: 768px) {
+    #CP-Main-Container{
+    }
+    #CP-Map-Container{
+    }
+    #Inside-Map-Info{
+        right: 0%;
+    }
+}

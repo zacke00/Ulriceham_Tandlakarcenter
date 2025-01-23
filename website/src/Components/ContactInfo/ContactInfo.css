@@ -1,66 +1,109 @@
-#CI-Main-Container{
+/* Main Container */
+#CI-Main-Container {
     display: flex;
-    z-index: 2;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0 0 30px var(--sixth-color);
     border-radius: 0.3rem;
-    width: 25vw;
-    height: 65vh;
+    width: 500px;
+    height: 600px;
     background-color: rgb(255, 255, 255);
-}
-
-#CI-Inner-Container {
+    margin: 2rem auto;
+  }
+  
+  /* Inner Container */
+  #CI-Inner-Container {
     margin-left: 1rem;
     width: 18rem;
     display: flex;
     flex-direction: column;
     border-radius: 0.3rem;
-
-}
-
-#CI-Secound-Container,
-#CI-Third-Container,
-#CI-Fourth-Container{
-    display: flex;
-    flex-direction: column;
-    width: 18rem;
-    padding: 0;
-    margin: 0;
-
-}
-
-#CI-Title{
+  }
+  
+  /* Title and Sub-Title */
+  #CI-Title {
     color: var(--Main-Title-Color);
     font-family: "Comfortaa", cursive;
-}
-
-#CI-Sub-Title{
+  }
+  
+  #CI-Sub-Title {
     color: var(--sixth-color);
     font-family: "Comfortaa", cursive;
-    font-size: 10;
-    margin: 0;
     margin-top: 1rem;
-}
-#CI-Sub-P {
+  }
+  
+  #CI-Sub-P {
     color: var(--sixth-color);
     font-family: "Comfortaa", cursive;
-    font-size: 10;
     margin: 0;
-}
-
-#CI-Image-Container{
+  }
+  
+  /* Image Container */
+  #CI-Image-Container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
     width: 100%;
-}
-
-#CI-Image {
+  }
+  
+  #CI-Image {
     background-image: url("../../Images/Tandanlaget-face.png");
     background-size: cover;
     background-position: center;
     border-radius: 50%;
     height: 10rem;
     width: 10rem;
-}
+  }
+  
+  /* Responsive Layout */
+  
+  /* Adjust for screens below 768px */
+  @media (max-width: 768px) {
+    #CI-Main-Container {
+    position: static; /* Remove fixed placement */
+    width: 430px; /* Full width */
+    height: auto; /* Adjust height dynamically */
+    box-shadow: none; /* Remove shadow for simplicity */
+    border-radius: 4px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;        
+    margin-top: 320px;
+    }
+    #CI-Inner-Container {
+      margin-left: 0;
+      width: 90%; /* Expand inner container */
+    }
+  
+    #CI-Image-Container {
+      margin-top: 1rem;
+    }
+  
+    #CI-Image {
+      height: 8rem;
+      width: 8rem;
+    }
+  }
+  
+  /* Adjust for screens below 480px */
+  @media (max-width: 480px) {
+    #CI-Title {
+      font-size: 1.5rem;
+    }
+  
+    #CI-Sub-Title {
+      font-size: 1rem;
+    }
+  
+    #CI-Sub-P {
+      font-size: 0.9rem;
+    }
+  
+    #CI-Image {
+      height: 6rem;
+      width: 6rem;
+    }
+  }

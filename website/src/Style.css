@@ -5,7 +5,7 @@ body, html {
   padding: 0; /* Reset default padding */
   overflow: visible; /* Ensure that nothing is clipped or scrolls unexpectedly */
   font-family: 'Roboto', sans-serif; /* Set default font for consistency */
-  background: var(--primary-color); /* Apply theme background color */
+  background: var(--Background-Color); /* Apply theme background color */
   color: var(--sixth-color); /* Apply theme text color */
 }
 

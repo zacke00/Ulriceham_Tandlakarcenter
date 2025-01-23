@@ -71,9 +71,12 @@
 @media (max-width: 1100px) {
   #MS-First-Item,
   #MS-Second-Item {
-    width: 90%; /* Items take up more space on smaller screens */
+    width: 70%; /* Items take up more space on smaller screens */
     height: 10vh;
     margin-bottom: 0.5rem; /* Add extra spacing */
+  }
+  #MS-Second-Item{
+    margin-bottom: 20vh;
   }
 
   #MS-Sub-Title {
@@ -85,31 +88,11 @@
   }
 }
 
-/* For screens smaller than 480px (mobile devices) */
-@media (max-width: 480px) {
-  #MS-Section-Container {
-    gap: 5%; /* Reduce the gap between items */
-  }
 
-  #MS-First-Item,
-  #MS-Second-Item {
-    width: 100%; /* Items span the full width */
-    padding: 1rem; /* Adjust padding for smaller screens */
-  }
-
-  #MS-Sub-Title {
-    font-size: 1.5rem; /* Reduce font size further */
-  }
-
-  #MS-Sub-P {
-    font-size: 0.8rem; /* Further adjust font size */
-  }
-  
-}
 @media (max-width: 480px) {
   #MS-Section-Container {
     gap: 4%; /* Reduce gap further for tight spaces */
-    margin-top: 20vh; /* Adjust vertical spacing */
+
   }
 
   #MS-First-Item,
@@ -118,7 +101,7 @@
     height: auto; /* Allow height to adjust dynamically */
   }
   #MS-Second-Item{
-    padding-bottom: 10vh;
+    margin-bottom: 10vh;
   }
 
   #MS-Sub-Title {

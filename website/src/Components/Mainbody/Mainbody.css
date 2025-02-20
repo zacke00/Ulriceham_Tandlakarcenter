@@ -58,8 +58,7 @@
 
 @media (max-width: 768px) {
   #Main-Inner-Container {
-    flex-direction: column; /* Stacks elements vertically */
-    height: auto; /* Allows content to adjust dynamically */
+    height: 80vh; /* Adjust height for smaller screens */
   }
 
   #Left-Image,
@@ -79,5 +78,8 @@
   #Middle-Section {
     top: 35%; /* Adjust further for very small screens */
     font-size: 14px; /* Reduce font size */
+  }
+  #Main-Inner-Container{
+    height: 500px;
   }
 }

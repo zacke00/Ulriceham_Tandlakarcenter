@@ -62,16 +62,11 @@
   /* Adjust for screens below 768px */
   @media (max-width: 768px) {
     #CI-Main-Container {
-    position: static; /* Remove fixed placement */
-    width: 430px; /* Full width */
+    width: 100vw; /* Full width */
     height: auto; /* Adjust height dynamically */
     box-shadow: none; /* Remove shadow for simplicity */
     border-radius: 4px;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;        
-    margin-top: 320px;
+    margin-top: 26vh;
     }
     #CI-Inner-Container {
       margin-left: 0;

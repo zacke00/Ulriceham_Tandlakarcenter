@@ -4,6 +4,8 @@
     transition: all 0.5s ease-in-out;
 }
 
+
+
 .Main-Page-Header{
     background-color: var(--off-color1);
 }
@@ -48,6 +50,10 @@
     text-decoration: none;
 }
 
+#Burger-Menu {
+    display: none;
+}
+
 /* Header Inner Container */
 #Header-Inner-Container {
     display: flex;
@@ -80,19 +86,44 @@
     transform: scale(1.1);
 }
 
-@Media (max-width:480px){
+@Media (max-width: 768px) {
+    #Header-Inner-Container {
+        gap: 15%;
+        padding-top: 5px;
+    }
+}
 
-  #Header-Inner-Container {
-    gap: 15%; /* Reduce gap between header links */
-    padding-top: 5px;
-  }
+@Media (max-width:480px){
+    #Header-Inner-Container {
+        height: 60px;
+    }
+    #Burger-Menu{
+        
+        display: block;
+        font-size: 30px;
+        color: var(--sixth-color);
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    #Open a{
+        display: block;
+    }
+    #Closed a{
+        display: none;
+    }
+
+    
 
   #Header-Icon {
     font-size: 24px; /* Smaller logo size */
   }
 
   #Header-Pages-Container {
-    gap: 10px; /* Narrow gap for links */
+    z-index: 3;
+    position: absolute;
+    top: 60px;
+    right: 1vw;
   }
 
   .Normal-Link h2,

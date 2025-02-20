@@ -41,12 +41,12 @@
 
 
 #Information-Main-Container {
-    flex-direction: column;
+
 
   }
 
   #Information-Section {
-    max-width: 90%; /* Slightly reduce max-width */
+
     text-align: left; /* Align text for better readability */
   }
 

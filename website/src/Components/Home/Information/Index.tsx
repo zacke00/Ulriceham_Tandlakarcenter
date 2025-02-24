@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Information.css';
-import informationData from "../../data/Information.json";
+import informationData from "../../../data/Information.json";
 
 export const Information: React.FC = () => {
 

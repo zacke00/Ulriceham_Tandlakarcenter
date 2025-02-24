@@ -14,7 +14,7 @@
     width: 40vw;
     background-color: black;
     transition: all 0.5s ease-in-out;
-    background-image: url("../../Images/Tandanlaget-face.png");
+    background-image: url("../../../Images/Tandanlaget-face.png");
     background-size: cover;
     border-radius: 10px;
 }
@@ -33,6 +33,6 @@
 }
 
 .Sted {
-    background-image: url("../../Images/Tandanlaget-face.png");
+    background-image: url("../../../Images/Tandanlaget-face.png");
     background-size: cover;
 }

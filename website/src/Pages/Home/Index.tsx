@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Home.css"
-import { MainBody } from "../../Components/Mainbody/Index";
-import MiddleSection from "../../Components/MiddleSection/Index";
-import { Information } from "../../Components/Information/Index";
+import { MainBody } from "../../Components/Home/Mainbody/Index";
+import MiddleSection from "../../Components/Home/MiddleSection/Index";
+import { Information } from "../../Components/Home/Information/Index";
 
 
 

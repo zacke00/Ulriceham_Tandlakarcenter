@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap; /* Allow items to wrap on smaller screens */
   justify-content: center;
-
   gap: 3%;
   z-index: 1;
 }
@@ -13,10 +12,10 @@
 #MS-Second-Item {
   text-decoration: none;
   margin-bottom: 0vh; /* Add margin for spacing when items stack */
-  padding: 2%;
+  padding: 2rem;
   height: 120px; /* Allow the height to adjust based on content */
   width: 40%; /* Default: 45% width for medium to large screens */
-  background-color: var(--primary-color);
+  background-color: var(--white-color);
   transition: all 0.5s ease-in-out;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
   z-index: 1;
@@ -68,35 +67,25 @@
 }
 
 /* Media Queries for Responsiveness */
-@media (min-width: 1100px),(min-height: 800px ) {
-  #MS-First-Item,
-  #MS-Second-Item {
-    margin-top: 50vh; 
+@media (min-width: 1100px)
+{
+  #MS-Section-Container{
+    margin-top: 50vh;
   }
 }
 
-@media (max-height: 799px) {
-  #MS-First-Item,
-  #MS-Second-Item {
-
-  }
-  #Middle-Section {
-    margin-top: 10vh;
-  }
-
-  #MS-Section-Container {
-  }
-}
 /* For screens smaller than 768px (tablets and small devices) */
 @media (max-width: 1100px) {
   #MS-First-Item,
   #MS-Second-Item {
     width: 70%; /* Items take up more space on smaller screens */
-
+    padding: 1rem;
     margin-bottom: 0.5rem; /* Add extra spacing */
+    border-radius: 10px;
   }
   #MS-First-Item{
     margin-top: 10vh;
+    height: auto;
   }
 
   #MS-Sub-Title {
@@ -112,7 +101,7 @@
 @media (max-width: 480px) {
   #MS-Section-Container {
     gap: 10px; /* Reduce gap for tighter layout */
-    margin-top: 20vh;
+    margin-top: 8rem;
   }
 
   #MS-First-Item,
@@ -120,6 +109,7 @@
     width: 85%; /* Almost full width to fit smaller screens */
     height: auto; /* Allow height to adjust dynamically */
     margin-top: 0;
+    border-radius: 10px;
   }
 
   #MS-Sub-Title {
@@ -127,6 +117,7 @@
   }
 
   #MS-Sub-P {
-    font-size: 0.75rem; /* Smaller text for tighter layout */
+    font-size: 0.9rem; /* Smaller text for tighter layout */
   }
+  
 }

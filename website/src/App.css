@@ -1,0 +1,9 @@
+#padding{
+    height: 150px
+}
+
+@media (max-width: 480px){
+    #padding{
+        height: 70px
+    }
+}

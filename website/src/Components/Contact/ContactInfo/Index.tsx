@@ -1,6 +1,6 @@
 import React from "react";
 import "./ContactInfo.css";
-import FaceImage from "../../Images/Tandanlaget-face.png";
+import FaceImage from "../../../Images/Tandanlaget-face.png";
 
 const ContactInfo: React.FC = () => {
   return (

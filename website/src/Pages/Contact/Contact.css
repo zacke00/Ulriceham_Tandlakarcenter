@@ -27,8 +27,11 @@
 
 @media (max-width: 768px) {
     #CP-Main-Container{
+        margin: 0;
+        padding: 0;
     }
     #CP-Map-Container{
+        
     }
     #Inside-Map-Info{
         right: 0%;

@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ContactPage } from './Pages/Contact/Index';
 import { AboutUsPage } from './Pages/About-us/Index';
 import { HomePage } from './Pages/Home/Index';
+import './App.css';
 
 function App() {
   const [theme, setTheme] = useState<ThemeContextType>("light");
@@ -15,6 +16,7 @@ function App() {
       <div id='body'>
 
         <Router>
+          <div id='padding'></div>
         <Header/>
           <Routes>
             <Route path="/" element={<HomePage/>} />

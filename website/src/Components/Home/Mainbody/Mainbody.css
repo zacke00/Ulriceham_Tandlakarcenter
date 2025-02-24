@@ -22,7 +22,7 @@
 }
 
 #Background-Fallback {
-  background: url(../../../public/Videos/Doctor_Tooth.gif) no-repeat;
+  background: url(../../../../public/Videos/Doctor_Tooth.gif) no-repeat;
   background-color: var(--off-color1);
 
   background-position-y: 0%;
@@ -80,6 +80,7 @@
     font-size: 14px; /* Reduce font size */
   }
   #Main-Inner-Container{
-    height: 500px;
+
+    height: 600px;
   }
 }

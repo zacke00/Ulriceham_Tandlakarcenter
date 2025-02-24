@@ -10,7 +10,7 @@ export const Header: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 90);
+      setScrolled(window.scrollY > 100);
     };
 
     const handleResize = () => {
@@ -30,9 +30,9 @@ export const Header: React.FC = () => {
 
   return (
     <div
-      className={`${
-        scrolled ? "Header-Container-Scrolled" : "Header-Container"
-      } ${isMainPage ? "Main-Page-Header" : "Other-Page-Header"}`}
+      className={`Header-Container ${scrolled ? "Header-Container-Scrolled" : ""} ${
+        isMainPage ? "Main-Page-Header" : "Other-Page-Header"
+      }`}
     >
       <div id="Header-Inner-Container">
         <div id="Header-Icon">Tandanlaget</div>
@@ -40,26 +40,29 @@ export const Header: React.FC = () => {
         {/* Burger Menu Button */}
         {isMobile && (
           <div
-            id="Burger-Menu"
-            onClick={() => setMenuOpen((prev) => !prev)}
+          id="Burger-Menu"
+          className={menuOpen ? "Open" : ""}
+          onClick={() => setMenuOpen((prev) => !prev)}
           >
-            ☰
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         )}
 
         {/* Navigation */}
-        <div
-          id="Header-Pages-Container"
-          style={{ display: isMobile ? (menuOpen ? "block" : "none") : "flex" }}
-        >
+        <div id="Header-Pages-Container" className={menuOpen ? "Open" : "Closed"}>
           <Link to="/" className={scrolled ? "Scrolled-Link" : "Normal-Link"}>
             <h2>Hem</h2>
+            {location.pathname === "/" && <span id="Underline"></span>}
           </Link>
           <Link to="/about-us" className={scrolled ? "Scrolled-Link" : "Normal-Link"}>
             <h2>Om oss</h2>
+            {location.pathname === "/about-us" && <span id="Underline"></span>}
           </Link>
           <Link to="/contact" className={scrolled ? "Scrolled-Link" : "Normal-Link"}>
             <h2>Kontakt</h2>
+            {location.pathname === "/contact" && <span id="Underline"></span>}
           </Link>
         </div>
       </div>

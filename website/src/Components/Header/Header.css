@@ -1,28 +1,37 @@
 /* Default Header Style */
 .Header-Container {
-    position: relative;
-    transition: all 0.5s ease-in-out;
-}
-
-
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+  }
 
 .Main-Page-Header{
-    background-color: var(--off-color1);
+    background-color: var(--off-color);
 }
 
 .Other-Page-Header{
-    background-color: var(--White-Color);
+    background-color: var(--off-color);
 }
+
 
 /* Scrolled Header Style */
 .Header-Container-Scrolled {
-    position: sticky; /* Stick to the top of the viewport */
-    top: 0;
+    position: fixed; /* Stick to the top of the viewport */
+    width: 100%;
+    height: 100px;
     z-index: 1;
-    background-color: var(--primary-color); /* Background color for the header */
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.5s ease-in-out;
     text-decoration: none;
+
+    transition: transform 0.5s ease-in-out;
+}
+
+.Header-Container-Scrolled.Appeared {
+    transform: translateY(0);
 }
 .Normal-Link{
     text-decoration: none;
@@ -31,8 +40,8 @@
 .Normal-Link h2 {
     font-family: "Comfortaa", cursive;
     font-size: 20px;
+    padding: 10px;
     color: var(--sixth-color);
-    transition: all 0.3s ease-in-out;
     text-decoration: none;
     
 }
@@ -46,7 +55,6 @@
     font-family: "Comfortaa", cursive;
     font-size: 18px; /* Optional: Smaller font on scroll */
     color: black; /* Change color on scroll */
-    transition: all 0.3s ease-in-out;
     text-decoration: none;
 }
 
@@ -57,6 +65,7 @@
 /* Header Inner Container */
 #Header-Inner-Container {
     display: flex;
+    height: 100%;
     align-items: center;
     justify-content: center;
     gap: 33%;
@@ -76,54 +85,123 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 10px;
+    gap: 4vw;
+}
+
+#Underline {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: black;
 }
 
 .Normal-Link:hover {
-    transform: scale(1.1);
+    transform: scale(1.);
 }
 .Scrolled-Link:hover {
     transform: scale(1.1);
 }
 
+
+
+
+/**
+
+MEDIA QUERIES
+
+
+*/
+
 @Media (max-width: 768px) {
     #Header-Inner-Container {
-        gap: 15%;
+        display: flex;
+        flex-direction: column;
         padding-top: 5px;
+        gap: 0;
     }
+
+    #Header-Icon {
+        font-size: 34px; /* Smaller logo size */
+        padding-bottom: 0;
+    }
+
+
 }
 
 @Media (max-width:480px){
+    .Header-Container{
+        height: 70px;
+    }
     #Header-Inner-Container {
         height: 60px;
     }
     #Burger-Menu{
-        
         display: block;
         font-size: 30px;
         color: var(--sixth-color);
         position: absolute;
         right: 10px;
         top: 10px;
+        padding-top: 10px;
     }
-    #Open a{
+    
+    #Burger-Menu span {
         display: block;
-    }
-    #Closed a{
-        display: none;
+        width: 30px;
+        height: 4px;
+        margin-bottom: 7px;
+        background: var(--sixth-color);
+        border-radius: 2px;
     }
 
-    
+    .Other-Page-Header #Header-Pages-Container.Open{
+        background-color: var(--off-color);
+    }
+    #Burger-Menu.Open span:nth-child(1) {
+        transform: translateY(11px) rotate(45deg);
+    }
+    #Burger-Menu.Open span:nth-child(2) {
+        width: 0;
+    }
+    #Burger-Menu.Open span:nth-child(3) {
+        transform: translateY(-11px) rotate(-45deg);
+    }
+
+    #Header-Pages-Container {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px 0 10px 10px;
+        padding: 0;
+        max-height: 0;
+        z-index: 3;
+        overflow: hidden;
+        transition: all 0.4s ease-in;
+    }
+
+    #Header-Pages-Container.Open {
+        background-color: var(--off-color);
+        max-height: 300px; /* Adjust this based on your content height */
+        padding: 0;
+        margin-top: 5px;
+    }
+    .Other-Page-Header #Header-Pages-Container {
+        background-color: var(--off-color);
+    }
+
+    #Header-Pages-Container a {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
 
   #Header-Icon {
     font-size: 24px; /* Smaller logo size */
-  }
-
-  #Header-Pages-Container {
-    z-index: 3;
-    position: absolute;
-    top: 60px;
-    right: 1vw;
   }
 
   .Normal-Link h2,

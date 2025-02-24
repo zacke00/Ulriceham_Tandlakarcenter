@@ -1,6 +1,6 @@
 import React from "react";
-
-import Carousel from "../../Components/Carousel/Index";
+import "./AboutUs.css";
+import Carousel from "../../Components/About-us/Carousel/Index";
 
 export const AboutUsPage = () => {
     

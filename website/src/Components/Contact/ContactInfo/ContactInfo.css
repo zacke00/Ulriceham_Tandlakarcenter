@@ -6,16 +6,17 @@
     justify-content: center;
     box-shadow: 0 0 30px var(--sixth-color);
     border-radius: 0.3rem;
-    width: 500px;
+    width: 25vw;
+    padding: 10px;
     height: 600px;
     background-color: rgb(255, 255, 255);
-    margin: 2rem auto;
+
   }
   
   /* Inner Container */
   #CI-Inner-Container {
     margin-left: 1rem;
-    width: 18rem;
+    width: 80%;
     display: flex;
     flex-direction: column;
     border-radius: 0.3rem;
@@ -24,6 +25,7 @@
   /* Title and Sub-Title */
   #CI-Title {
     color: var(--Main-Title-Color);
+    font-size: 2rem;
     font-family: "Comfortaa", cursive;
   }
   
@@ -44,17 +46,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
     width: 100%;
   }
   
   #CI-Image {
-    background-image: url("../../Images/Tandanlaget-face.png");
+    background-image: url("../../../Images/Tandanlaget-face.png");
     background-size: cover;
     background-position: center;
-    border-radius: 50%;
-    height: 10rem;
-    width: 10rem;
+    border-radius: 5%;
+    height: 250px;
+    width: 400px;
   }
   
   /* Responsive Layout */
@@ -62,12 +63,12 @@
   /* Adjust for screens below 768px */
   @media (max-width: 768px) {
     #CI-Main-Container {
-    width: 100vw; /* Full width */
+    width: 250px; /* Full width */
     height: auto; /* Adjust height dynamically */
     box-shadow: none; /* Remove shadow for simplicity */
     border-radius: 4px;
-    margin-top: 26vh;
     }
+
     #CI-Inner-Container {
       margin-left: 0;
       width: 90%; /* Expand inner container */
@@ -78,15 +79,28 @@
     }
   
     #CI-Image {
-      height: 8rem;
-      width: 8rem;
+      background-image: url("../../../Images/Tandanlaget-face.png");
+      background-size: cover;
+      background-position: center;
+      border-radius: 10%;
+      height: 10rem;
+      width: 20rem;
     }
   }
   
   /* Adjust for screens below 480px */
   @media (max-width: 480px) {
+    #CI-Main-Container {
+      width: 100vw; /* Full width */
+      margin: 0;
+      margin-top: -3rem;
+      margin-bottom: 0;
+      
+      }
+  
     #CI-Title {
-      font-size: 1.5rem;
+      height: 0;
+      font-size: 0;
     }
   
     #CI-Sub-Title {
@@ -98,7 +112,8 @@
     }
   
     #CI-Image {
-      height: 6rem;
-      width: 6rem;
+      background-image: none;
+      height: 0;
+
     }
   }

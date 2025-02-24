@@ -1,37 +1,56 @@
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import React, { useEffect, useState } from "react";
-import ContactInfo from "../../Components/ContactInfo/Index";
+import ContactInfo from "../../Components/Contact/ContactInfo/Index";
 import "./Contact.css"
 
 export const ContactPage = () => {
-    const [mapLoaded, setMapLoaded] = useState(false);
+  const [mapLoaded, setMapLoaded] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [center, setCenter] = useState({
+      lat: 57.79921346590481,
+      lng: 13.427529701850889,
+  });
 
-    useEffect(() => {
-        const timeout = setTimeout(() => {
-          if (!mapLoaded) {
-            window.location.reload();
-          }
-        }, 2000); // Wait for 3 seconds before refreshing if the map is not loaded
-    
-        return () => clearTimeout(timeout); // Clear timeout on component unmount
-      }, [mapLoaded]);
-    const mapContainerStyle = {
-        width: '100%',
-        height: '80vh',
+  useEffect(() => {
+      const handleResize = () => {
+          setWindowWidth(window.innerWidth);
       };
-    
-      const center = {
-        lat: 57.79921346590481,
-        lng: 13.425029701850889,
+
+      window.addEventListener("resize", handleResize);
+      handleResize(); // Set initial value
+
+      return () => {
+          window.removeEventListener("resize", handleResize);
       };
-      const markerPosition = {
-        lat: 57.79921346590481,
-        lng: 13.425029701850889,
-    }
-    const handleMapLoad = () => {
-        setMapLoaded(true); // Set mapLoaded state to true when map is loaded
-    };
-    console.log(mapLoaded);
+  }, []);
+
+  useEffect(() => {
+      if (windowWidth < 768) {
+          setCenter({
+              lat: 57.80041346590481, // Centered Bottom
+              lng: 13.425029701850889, // Centered Bottom
+          });
+      } else {
+          setCenter({
+              lat: 57.79921346590481,
+              lng: 13.427529701850889,
+          });
+      }
+  }, [windowWidth]);
+
+  const mapContainerStyle = {
+      width: "100%",
+      height: "80vh",
+  };
+
+  const markerPosition = {
+      lat: 57.79921346590481,
+      lng: 13.425029701850889,
+  };
+
+  const handleMapLoad = () => {
+      setMapLoaded(true);
+  };
     return (
         <div id="CP-Main-Container">
 

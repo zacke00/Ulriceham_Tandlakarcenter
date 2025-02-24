@@ -101,19 +101,24 @@
 @media (max-width: 480px) {
   #MS-Section-Container {
     gap: 10px; /* Reduce gap for tighter layout */
-    margin-top: 8rem;
+    margin-top: 30vh;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
   }
 
   #MS-First-Item,
   #MS-Second-Item {
-    width: 85%; /* Almost full width to fit smaller screens */
-    height: auto; /* Allow height to adjust dynamically */
-    margin-top: 0;
-    border-radius: 10px;
+    width: 140px; /* Almost full width to fit smaller screens */
+    height: 30px; /* Allow height to adjust dynamically */
+    padding: 20px; /* Reduce padding for tighter layout */
+    border-radius: 50px;
+    margin: 0;
+
   }
 
   #MS-Sub-Title {
     font-size: 1.4rem; /* Slightly reduce size for compact layout */
+    border-bottom: none;
   }
 
   #MS-Sub-P {

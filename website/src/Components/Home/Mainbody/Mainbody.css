@@ -15,7 +15,11 @@
 }
 
 #Left-Image {
+  
+  background-image: url(../../../Images/Hello-Wave.png);
+  background-repeat: no-repeat;
   background-size: contain;
+  transform: scaleX(-1);
   width: 50%; /* 50% of 1440px */
   height: 100%; /* Matches parent container */
   z-index: -1; /* Make sure it stays visible */
@@ -23,12 +27,9 @@
 
 #Background-Fallback {
   background: url(../../../../public/Videos/Doctor_Tooth.gif) no-repeat;
-  background-color: var(--off-color1);
-
-  background-position-y: 0%;
-  background-repeat: no-repeat;
+  background-size:contain;
   flex: 1; /* Fills remaining space */
-  width: 100%; /* 50% of 1440px */
+  width: 100; /* 50% of 1440px */
   height: 100%;
 }
 
@@ -61,12 +62,15 @@
     height: 80vh; /* Adjust height for smaller screens */
   }
 
-  #Left-Image,
-  #Background-Fallback {
+  #Left-Image {
     width: 100%; /* Takes full width */
-    height: 50vh; /* Adjust height for smaller screens */
+    height: 100%; /* Adjust height for smaller screens */
+    background-size: cover;
+    background-position: center;
   }
-
+  #Background-Fallback{
+    display: none;
+  }
   #Middle-Section {
     top: 40%; /* Adjust position */
     left: 50%;

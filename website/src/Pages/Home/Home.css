@@ -1,2 +1,6 @@
-
+#Main-Background-Container {
+    
+    width: 100vw; /* 50% of 1440px */
+    height: 100%;
+}
 
